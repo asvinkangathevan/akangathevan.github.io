@@ -4,30 +4,46 @@
   <meta charset="UTF-8">
   <title>AK2</title>
   <link rel="stylesheet" href="style.css">
-</head> 
-  <body>
-  <section class="contact-content" id="contact">
-        <div class="container">
-            <div class="contact-title">
-                <h4>Contact </h4>
-                
-            </div>
-            <div class="contact">
-                <form name="submitToGoogleSheet">
-                    <input type="text" name="NOM" placeholder="Nom" required>
-                    <input type="email" name="EMAIL" placeholder="Email" required>
-                    <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message" class="submit">
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </section>
+</head>
+<body>
 
-    <footer>
+  <section class="contact-content" id="contact">
+    <div class="container">
+      <div class="contact-title">
+        <h4>Contact</h4>
+      </div>
+
+      <div class="contact">
+        <form name="submitToGoogleSheet">
+          <input type="text" name="NOM" placeholder="Nom" required>
+          <input type="email" name="EMAIL" placeholder="Email" required>
+          <input type="text" name="SUBJECT" placeholder="Sujet">
+          <textarea name="MESSAGE" placeholder="Message"></textarea>
+          <input type="submit" value="Envoyer le message" class="submit">
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Retour vers le portfolio -->
+
+   <script>
+        function transitionTo(url) {
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500); // Durée identique à celle du CSS
+        }
+    </script>
+    
+  <div class="back-to-portfolio">
+    <button onclick="transitionTo('index.html')">Retour au portfolio</button>
+  </div>
+
+  <footer>
     <p>&copy; 2025 AK. Tous droits réservés.</p>
   </footer>
 
-  </body>
+</body>
 </html>

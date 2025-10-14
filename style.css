@@ -7,6 +7,22 @@ body {
   transition: opacity 0.5s ease;
 
 }
+.back-to-portfolio {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #09d3f2;
+  border: 2px solid #09d3f2;
+  transition: background-color 0.3s, color 0.3s;
+  bottom: unset;
+
+}
 
 header {
   display: flex;
