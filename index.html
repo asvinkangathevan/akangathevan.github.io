@@ -6,56 +6,87 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h2>Asvin KANGATHEVAN</h2>
-    <a href="https://www.linkedin.com/in/asvinkangathevan"><img src="info.jpeg" alt="Profil"></a>
+    <h2>Ashwin KANGATHEVAN</h2>
+    <a href="https://www.linkedin.com/in/asvinkangathevan" target="_blank">
+      <img src="info.jpeg" alt="Profil LinkedIn">
+    </a>
   </header>
 
   <main>
+
     
     <section>
       <h3>Compétences</h3>
       <ul>
         <li>RGPD</li>
-        <li>HTML/CSS</li>
+        <li>HTML / CSS</li>
         <li>PostgreSQL</li>
         <li>MySQL</li>
         <li>PHP</li>
         <li>Création de sites web</li>
-        <li>Maîtrise de MCD, MLD</li>
-        <li>Manipulation des bases de données</li>
-        
+        <li>Maîtrise des modèles MCD et MLD</li>
+        <li>Manipulation de bases de données</li>
       </ul>
     </section>
 
+   
     <section>
       <h3>Formations</h3>
       <ul>
-        <li>Bac Pro Système Numérique - Lycée L'ENNA Saint-Denis</li>
-        <li>BTS Services Informatiques aux Organisations - Lycée Turgot, Paris</li>
+         <li>
+          Bac Pro Systèmes Numériques – Lycée L'ENNA, 
+          <a href="https://lyceedelenna.fr/" target="_blank">Saint-Denis</a>
+        </li>
+        <li>
+          BTS Services Informatiques aux Organisations – Lycée Turgot, 
+          <a href="https://pia.ac-paris.fr/serail/jcms/s2_271354/fr/accueil" target="_blank">Paris</a>
+        </li>
       </ul>
     </section>
 
+    
     <section>
       <h3>Diplômes</h3>
       <ul>
-        <li>Bac Pro Série SN</li>
-        <li>Brevet</li>
+        <li>Bac Pro série SN</li>
+        <li>Brevet des collèges</li>
         <li>DELF B1</li>
       </ul>
     </section>
 
+      <section>
+      <h3>Langues</h3>
+      <ul>
+        <li>Français </li>
+        <li>Anglais </li>
+        <li>Tamoul </li>
+      </ul>
+      </section>
+
+    <script>
+        function transitionTo(url) {
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500); // Durée identique à celle du CSS
+        }
+    </script>
+
     <section class="contact-content" id="contact">
-        <div class="container">
-            <div class="contact-title">
-               <a href="contact.html"><h4>Contact </h4></a> 
-            </div>
-          
-  </section>  
-</main>
+      <div class="container">
+        <div class="contact-title">
+          <a onclick="transitionTo('contact.html'); return false;"><h4>Contact</h4></a>
+        </div>
+      </div>
+    </section>
+    
+  </main>
 
   <footer>
     <p>&copy; 2025 AK. Tous droits réservés.</p>
   </footer>
+
 </body>
 </html>
